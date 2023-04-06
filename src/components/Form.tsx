@@ -65,18 +65,16 @@ ${res5}`);
   };
 
   useEffect(() => {
-    (async () => {
-      const res1 = await localStorage.getItem('form1');
-      const res2 = await localStorage.getItem('form2');
-      const res3 = await localStorage.getItem('form3');
-      const res4 = await localStorage.getItem('form4');
-      const res5 = await localStorage.getItem('form5');
-      if (res1) setForm1(res1);
-      if (res2) setForm2(res2);
-      if (res3) setForm3(res3);
-      if (res4) setForm4(res4);
-      if (res5) setForm5(res5);
-    })();
+    const res1 = localStorage.getItem('form1');
+    const res2 = localStorage.getItem('form2');
+    const res3 = localStorage.getItem('form3');
+    const res4 = localStorage.getItem('form4');
+    const res5 = localStorage.getItem('form5');
+    if (res1) setForm1(res1);
+    if (res2) setForm2(res2);
+    if (res3) setForm3(res3);
+    if (res4) setForm4(res4);
+    if (res5) setForm5(res5);
   }, []);
 
   return (
