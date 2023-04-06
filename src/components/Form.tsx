@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import dayjs from 'dayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
@@ -146,7 +145,7 @@ ${res5}`);
         <Button variant="contained" onClick={clickCopyBtn} sx={{ fontSize: '1.2rem', padding: '1rem', width: '40%' }}>
           COPY
         </Button>
-        <Button variant="contained" onClick={clearFormAndLocalStorage} sx={{ marginLeft: '1rem', fontSize: '1.2rem', padding: '1rem', width: '40%' }}>
+        <Button variant="outlined" onClick={clearFormAndLocalStorage} sx={{ marginLeft: '1rem', fontSize: '1.2rem', padding: '1rem', width: '40%' }}>
           CLEAR
         </Button>
       </Box>
